@@ -1,0 +1,13 @@
+C:\Users\Justin\Documents\Programming\Noway\bin\Debug\netcoreapp3.1\Noway.exe
+C:\Users\Justin\Documents\Programming\Noway\bin\Debug\netcoreapp3.1\Noway.deps.json
+C:\Users\Justin\Documents\Programming\Noway\bin\Debug\netcoreapp3.1\Noway.runtimeconfig.json
+C:\Users\Justin\Documents\Programming\Noway\bin\Debug\netcoreapp3.1\Noway.runtimeconfig.dev.json
+C:\Users\Justin\Documents\Programming\Noway\bin\Debug\netcoreapp3.1\Noway.dll
+C:\Users\Justin\Documents\Programming\Noway\bin\Debug\netcoreapp3.1\Noway.pdb
+C:\Users\Justin\Documents\Programming\Noway\obj\Debug\netcoreapp3.1\Noway.csprojAssemblyReference.cache
+C:\Users\Justin\Documents\Programming\Noway\obj\Debug\netcoreapp3.1\Noway.AssemblyInfoInputs.cache
+C:\Users\Justin\Documents\Programming\Noway\obj\Debug\netcoreapp3.1\Noway.AssemblyInfo.cs
+C:\Users\Justin\Documents\Programming\Noway\obj\Debug\netcoreapp3.1\Noway.csproj.CoreCompileInputs.cache
+C:\Users\Justin\Documents\Programming\Noway\obj\Debug\netcoreapp3.1\Noway.dll
+C:\Users\Justin\Documents\Programming\Noway\obj\Debug\netcoreapp3.1\Noway.pdb
+C:\Users\Justin\Documents\Programming\Noway\obj\Debug\netcoreapp3.1\Noway.genruntimeconfig.cache

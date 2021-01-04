@@ -1,0 +1,88 @@
+namespace Test {
+	public class Program {
+		public static void Main(string[] args) {
+			System.Boolean[] tabs = new System.Boolean[9];
+			System.Boolean twoDice = true;
+			int d1 = Dependencies.RandInt(1,6);
+			int d2 = Dependencies.RandInt(1,6);
+			int total = d1 + d2;
+			foreach(int i in Dependencies.To(0,8)) {
+				tabs[i] = true;
+			};
+			while(true) {
+				System.Console.Clear();
+				foreach(int i in Dependencies.To(0,8)) if(tabs[i]) System.Console.Write(("[" + (i + 1) + "]")); else System.Console.Write(("   "));
+				twoDice = false;
+				foreach(int i in Dependencies.To(6,8)) if(tabs[i]) {
+					twoDice = true;
+					break;
+				};
+				System.Boolean gameDone = true;
+				foreach(int i in Dependencies.To(0,8)) if(tabs[i]) {
+					gameDone = false;
+					break;
+				};
+				if(gameDone) {
+					System.Console.Clear();
+					System.Console.WriteLine(("You Won!!"));
+					System.Console.ReadKey();
+					break;
+				};
+				System.Console.WriteLine();
+				if(twoDice) System.Console.WriteLine(("dice: " + d1 + ", " + d2 + " total: " + total)); else {
+					System.Console.WriteLine(("dice: " + d1));
+					total = d1;
+				};
+				System.Console.Write(("input: "));
+				string input = System.Console.ReadLine();
+				System.Console.Clear();
+				if(input == "f") {
+					foreach(int i in Dependencies.To(0,8)) tabs[i] = true;
+					twoDice = true;
+					System.Console.WriteLine(("Game reset"));
+					System.Console.ReadKey();
+				} else if(input == "") {
+					System.Console.WriteLine(("Input invalid"));
+					System.Console.ReadKey();
+				} else {
+					System.String[] numStrings = input.Replace(" ","").Split((','));
+					System.Collections.Generic.List<int> nums = new System.Collections.Generic.List<int>();
+					foreach(string str in numStrings) nums.Add((str[0] - 48));
+					int sum = 0;
+					foreach(int n in nums) {
+						if(!tabs[n - 1]) {
+							System.Console.WriteLine(("[" + n + "] is already down!"));
+							System.Console.ReadKey();
+							sum = -1;
+							break;
+						};
+						sum = sum + n;
+					};
+					if(sum == total) {
+						foreach(int n in nums) tabs[n - 1] = false;
+						d1 = Dependencies.RandInt(1,6);
+						d2 = Dependencies.RandInt(1,6);
+						total = d1 + d2;
+					} else if(sum != -1) {
+						System.Console.WriteLine(("your input must add up to " + total));
+						System.Console.ReadKey();
+					};
+				};
+			};
+		}
+	}
+    public class Dependencies {
+		public static System.Collections.Generic.IEnumerable<int> To(int a, int b) {
+			if(a < b)
+                for(int i = a; i <= b; i++)
+                    yield return i;
+            else
+                for(int i = a; i >= b; i--)
+                    yield return i;
+		}
+        private static System.Random rng = new System.Random();
+        public static int RandInt(int min, int max) {
+            return rng.Next(min, max + 1);
+        }
+	}
+}

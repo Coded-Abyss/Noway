@@ -1,0 +1,82 @@
+tabs = sys.bool[9]
+
+twoDice = true
+d1 = sys.rand.nextInt(1, 6)
+d2 = sys.rand.nextInt(1, 6)
+total = d1 + d2
+
+for(i : 0 -> 8) {
+    tabs[i] = true
+}
+for(true) {
+    sys.console.clear()
+    for(i : 0->8)
+        if(tabs[i]) sys.console.print("["+(i+1)+"]")
+        else sys.console.print("   ")
+    twoDice = false
+    for(i : 6->8)
+        if(tabs[i]) {
+            twoDice = true
+            break
+        }
+    gameDone = true
+    for(i : 0->8)
+        if(tabs[i]) {
+            gameDone = false
+            break
+        }
+    if(gameDone) {
+        sys.console.clear()
+        sys.console.println("You Won!!")
+        sys.console.wait()
+        break
+    }
+
+    sys.console.println()
+    if(twoDice)
+        sys.console.println("dice: "+d1+", "+d2+" total: "+total)
+    else {
+        sys.console.println("dice: "+d1)
+        total = d1
+    }
+    sys.console.print("input: ")
+
+    input = sys.console.readln()
+    sys.console.clear()
+
+    if(input == "f") {
+        for(i : 0->8)
+            tabs[i] = true
+        twoDice = true
+        sys.console.println("Game reset")
+        sys.console.wait()
+    } else if(input == "") {
+        sys.console.println("Input invalid")
+        sys.console.wait()
+    } else {
+        numStrings = input.replace(" ", "").split(',')
+        nums = sys.int[]
+        for(str : numStrings) nums.add(str[0] - 48)
+        sum = 0
+        
+        for(n : nums) {
+            if(!tabs[n - 1]) {
+                sys.console.println("["+n+"] is already down!")
+                sys.console.wait()
+                sum = -1
+                break
+            }
+            sum = sum + n
+        }
+        if(sum == total) {
+            for(n : nums)
+                tabs[n - 1] = false
+            d1 = sys.rand.nextInt(1, 6)
+            d2 = sys.rand.nextInt(1, 6)
+            total = d1 + d2
+        } else if(sum != -1) {
+            sys.console.println("your input must add up to " + total)
+            sys.console.wait()
+        }
+    }
+}

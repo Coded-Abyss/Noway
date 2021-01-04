@@ -1,0 +1,13 @@
+c:\Users\Justin\Documents\Programming\Lang\bin\Debug\netcoreapp3.1\Lang.exe
+C:\Users\Justin\Documents\Programming\Lang\bin\Debug\netcoreapp3.1\Lang.deps.json
+C:\Users\Justin\Documents\Programming\Lang\bin\Debug\netcoreapp3.1\Lang.runtimeconfig.json
+C:\Users\Justin\Documents\Programming\Lang\bin\Debug\netcoreapp3.1\Lang.runtimeconfig.dev.json
+c:\Users\Justin\Documents\Programming\Lang\bin\Debug\netcoreapp3.1\Lang.dll
+c:\Users\Justin\Documents\Programming\Lang\bin\Debug\netcoreapp3.1\Lang.pdb
+c:\Users\Justin\Documents\Programming\Lang\obj\Debug\netcoreapp3.1\Lang.csprojAssemblyReference.cache
+c:\Users\Justin\Documents\Programming\Lang\obj\Debug\netcoreapp3.1\Lang.AssemblyInfoInputs.cache
+c:\Users\Justin\Documents\Programming\Lang\obj\Debug\netcoreapp3.1\Lang.AssemblyInfo.cs
+c:\Users\Justin\Documents\Programming\Lang\obj\Debug\netcoreapp3.1\Lang.csproj.CoreCompileInputs.cache
+c:\Users\Justin\Documents\Programming\Lang\obj\Debug\netcoreapp3.1\Lang.dll
+c:\Users\Justin\Documents\Programming\Lang\obj\Debug\netcoreapp3.1\Lang.pdb
+C:\Users\Justin\Documents\Programming\Lang\obj\Debug\netcoreapp3.1\Lang.genruntimeconfig.cache
