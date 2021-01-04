@@ -43,6 +43,7 @@ Program {
     _setIndex for indexers (variable[0] = a)
     
     the return type of a method is infered from the last expression of the method, and if the type is not void, the result is returned
+    
     the argument types can be explicitly stated if the compiler cannot figure it out (which is rare)
     */
     
@@ -74,7 +75,7 @@ Program {
   }
 }
 ```
-Regardless of the what language is active, it has no impact on the syntax of the language, it only affect what methods and types you have access to.
+Regardless of the language that is active, it has no impact on the syntax of the language, it only affect what methods and types you have access to.
 In the future there will be a background type conversion system so types created in Noway can be translated between languages seamlessly as shown in the following code:
 ```cs
 Vector { //create type Vector
