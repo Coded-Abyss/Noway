@@ -74,8 +74,8 @@ Program {
   }
 }
 ```
-These compiler directives have no impact on the syntax of the language, they only add usable methods, and types.
-In the future there will be a background type conversion system so types created in Noway can be translated between languages seamlessly:
+Regardless of the what language is active, it has no impact on the syntax of the language, it only affect what methods and types you have access to.
+In the future there will be a background type conversion system so types created in Noway can be translated between languages seamlessly as shown in the following code:
 ```cs
 Vector { //create type Vector
    int x, y
