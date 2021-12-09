@@ -1,25 +1,28 @@
 # Noway
 Noway is a completely custom programming language that could change the way we code
 
+### Disclaimer:
+#### The following represents the future of the language, not the language in its current state. Right now it is fully functional, however it doesn't have OO implemented, and c# is (as of this writing) the only output language
+
 # Noway features:
 <ul>
 <li>Noway infers almost everything, unless explicitly stated otherwise, allowing you to make your code more concise</li>
 <li>Noway offers a lot of syntax sugar, making it really simple to do complex tasks</li>
 <li>Noway is staticly typed, allowing more errors to be caught at compile time</li>
 <li>Noway offers a standard library of all the basic functions you would want in any programming language (in progress)</li>
-<li>Noway is compiled, but I will also create an interpreter (DotNet based)</li>
+<li>Noway is compiled, but I will also create an interpreter (.Net based)</li>
 <li>Noway is cross-language, cross-platform</li>
 </ul>
 
 # Why did I create Noway?
 I've wanted to build a programming language for years, and had many failed attempts, but this one works.
-Over the years I've gotten a bit older and wiser with regards to issues in current programming languages and their corrosponding solutions, but one thing sticks out:
+Over the years as I've studied a variety of programming languages one thing sticks out:
 
-Why do we have so many programming languages?
+Why do we have so many of them?
 
-Because programming languages have certain strengths and weaknesses just by their design, and by their speed and influence in certain spheres of coding.
+Programming languages have certain strengths and weaknesses just by their design, and by their speed and influence in certain spheres of coding.
 
-What if we had access to all the strengths, and ability to avoid weaknesses? It might sound insane, but that's where Noway comes in.
+What if we had access to all the strengths, and ability to avoid weaknesses? That's where Noway comes in.
 Noway doesn't get compiled to machine code, instead it is compiled to the source code of other common languages, (c++, c, java, c#, python)
 and you will be able to flip between languages, and use the full power of each language anywhere in the code.
 
